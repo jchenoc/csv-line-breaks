@@ -17,7 +17,7 @@ def fix_line_breaks(data):
     while i < len(data) - 1:
         while len(data[i]) < num_cols:
             data[i] += data[i + 1]
-            data.pop(i)
+            data.pop(i + 1)
         i += 1
     return data
 
